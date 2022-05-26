@@ -73,7 +73,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:  # used square
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -89,7 +89,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -105,7 +105,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -121,7 +121,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -137,7 +137,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -153,7 +153,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -169,7 +169,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -185,7 +185,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -201,7 +201,7 @@ while play_again == 1:
                     print("Invalid position, that square is already taken, try again")
                 else:
                     print("Posição já foi tomada, tente novamente")
-                number_of_games = number_of_games - 1
+                number_of_games -= 1
                 if player == 0:
                     player = 1
                 else:
@@ -216,7 +216,7 @@ while play_again == 1:
                 print("Invalid position, try again")
             else:
                 print("Posição inválida, tente novamente")
-            number_of_games = number_of_games - 1
+            number_of_games -= 1
             if player == 0:
                 player = 1
             else:
@@ -262,7 +262,7 @@ while play_again == 1:
             player = 1
         else:
             player = 0
-        number_of_games = number_of_games + 1
+        number_of_games += 1
     else:
         if number_of_games == 16:  # end of loop, either it is a draw or a player won
             if language == 2:
