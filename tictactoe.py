@@ -38,15 +38,9 @@ while play_again == 1:
     else:
         second_player_name = str(input("\nO nome do segundo jogador é: "))
     print()
-    a1 = "  "  # define all positions
-    a2 = "  "
-    a3 = "  "
-    b1 = "  "
-    b2 = "  "
-    b3 = "  "
-    c1 = "  "
-    c2 = "  "
-    c3 = "  "
+    a1 = a2 = a3 = " " # define all positions
+    b1 = b2 = b3 = " "
+    c1 = c2 = c3 = " "
     number_of_games = 0
     player = 0
     while number_of_games < 9:  # while less than 9 games have been played
