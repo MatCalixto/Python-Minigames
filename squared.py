@@ -14,7 +14,7 @@ while True:
     if ptype == 1:
         print(f"{challenge_number} squared equals: ")
     elif ptype == 2:
-        print(input(f"The square root of {challenge_number} equals: "))
+        print((f"The square root of {challenge_number} equals: "))
     else:
         raise ValueError("Invalid problem type.")
 
@@ -26,6 +26,7 @@ while True:
         print(f"\nUnfortunately the answer was {sol}, try again")
 
     playagain = int(input("\nType 1 if you want to play again: "))
+    print("************************************************")
     if playagain != 1:
         break
 
