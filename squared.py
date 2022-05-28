@@ -1,24 +1,46 @@
-import random
-playagain = 1
-while playagain == 1:
-    ptype = random.randint(1,2)
-    number = random.randint(11,30)
-    sol = 0
-    print("Answer the math questions:")
-    print("")
-    if ptype == 1:
-        answer = int(input(str(number) + " squared equals: "))
-        sol = number**2
+"""Import needed for random number generation."""
+from random import randint
+
+import constants
+
+
+def check_solution(guess: int, solution: int) -> None:
+    """Method to Check if the answer is correct."""
+    if guess == solution:
+        print("\nCongrats, your answer was correct")
     else:
-        answer = int(input("The square root of " + str(number**2) + " equals: "))
-        sol = number
-    print("")
-    if answer == sol:
-        print("Congrats, your answer was correct")
+        print(f"\nUnfortunately the answer was {solution}, try again")
+
+
+def check_problem_type(problem_type: int) -> None:
+    """Method to check if the problem type is correct."""
+    if problem_type == 1:
+        print(f"{challenge_number} squared equals: ")
+    elif problem_type == 2:
+        print((f"The square root of {challenge_number} equals: "))
     else:
-        print("Unfortunately the answer was " + str(sol) + ", try again")
-    print("")
-    playagain = 0
-    playagain = int(input("Type 1 if you want to play again: "))
-    print("")
-print("Game has ended")
+        raise ValueError("Invalid problem type.")
+
+
+while True:
+
+    actual_problem_type = randint(1, constants.NUMBER_OF_PROBLEM_TYPES)
+    number = randint(constants.MIN_RANDINT_DIFFICULLTY,
+                     constants.MAX_RANDINT_DIFFICULLTY)
+
+    print("Answer the math questions:\n")
+
+    problem_solution = number ** (2 / actual_problem_type)
+    challenge_number = number ** actual_problem_type
+
+    check_problem_type(actual_problem_type)
+
+    problem_guess = int(input())
+    check_solution(problem_guess, problem_solution)
+
+    print("\nType 1 if you want to play again: ")
+    print("************************************************")
+    if int(input()) != 1:
+        break
+
+print("\nGame has ended")
