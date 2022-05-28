@@ -1,10 +1,10 @@
 """Import needed for random number generation."""
-import random
+from random import randint
 
 while True:
 
-    ptype = random.randint(1, 2)
-    number = random.randint(11, 30)
+    ptype = randint(1, 2)
+    number = randint(11, 30)
 
     print("Answer the math questions:\n")
 
