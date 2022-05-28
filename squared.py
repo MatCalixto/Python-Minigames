@@ -8,7 +8,7 @@ while True:
 
     print("Answer the math questions:\n")
 
-    sol = number ** (2 / ptype)
+    solution = number ** (2 / ptype)
     challenge_number = number ** ptype
 
     if ptype == 1:
@@ -20,10 +20,10 @@ while True:
 
     answer = int(input())
 
-    if answer == sol:
+    if answer == solution:
         print("\nCongrats, your answer was correct")
     else:
-        print(f"\nUnfortunately the answer was {sol}, try again")
+        print(f"\nUnfortunately the answer was {solution}, try again")
 
     playagain = int(input("\nType 1 if you want to play again: "))
     print("************************************************")
