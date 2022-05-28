@@ -21,7 +21,7 @@ while True:
     if answer == sol:
         print("\nCongrats, your answer was correct")
     else:
-        print("\nUnfortunately the answer was " + str(sol) + ", try again")
+        print(f"\nUnfortunately the answer was {sol}, try again")
 
     playagain = int(input("\nType 1 if you want to play again: "))
     if playagain != 1:
