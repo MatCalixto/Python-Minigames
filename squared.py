@@ -1,3 +1,4 @@
+"""Import needed for random number generation."""
 import random
 
 playagain = 1
