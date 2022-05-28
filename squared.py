@@ -27,11 +27,12 @@ while True:
     else:
         raise ValueError("Invalid problem type.")
 
-    check_solution(int(input()), problem_solution)
+    problem_guess = int(input())
+    check_solution(problem_guess, problem_solution)
 
-    play_again = int(input("\nType 1 if you want to play again: "))
+    print("\nType 1 if you want to play again: ")
     print("************************************************")
-    if play_again != 1:
+    if int(input()) != 1:
         break
 
 print("\nGame has ended")
