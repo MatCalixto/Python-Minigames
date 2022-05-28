@@ -1,6 +1,8 @@
 """Import needed for random number generation."""
 from random import randint
 
+import constants
+
 
 def check_solution(guess: int, solution: int) -> None:
     """Method to Check if the answer is correct."""
@@ -22,8 +24,9 @@ def check_problem_type(problem_type: int) -> None:
 
 while True:
 
-    actual_problem_type = randint(1, 2)
-    number = randint(11, 30)
+    actual_problem_type = randint(1, constants.NUMBER_OF_PROBLEM_TYPES)
+    number = randint(constants.MIN_RANDINT_DIFFICULLTY,
+                     constants.MAX_RANDINT_DIFFICULLTY)
 
     print("Answer the math questions:\n")
 
