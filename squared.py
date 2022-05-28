@@ -8,12 +8,12 @@ while True:
 
     print("Answer the math questions:\n")
 
+    sol = number ** (2 / ptype)
+
     if ptype == 1:
-        answer = int(input(f"{number} squared equals: "))
-        sol = number**2
+        answer = int(input(f"{number**ptype} squared equals: "))
     elif ptype == 2:
-        answer = int(input(f"The square root of {number**2} equals: "))
-        sol = number
+        answer = int(input(f"The square root of {number**ptype} equals: "))
     else:
         raise ValueError("Invalid problem type.")
 
