@@ -6,8 +6,7 @@ while True:
     ptype = random.randint(1, 2)
     number = random.randint(11, 30)
 
-    print("Answer the math questions:")
-    print()
+    print("Answer the math questions:\n")
 
     if ptype == 1:
         answer = int(input(str(number) + " squared equals: "))
