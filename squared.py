@@ -5,8 +5,8 @@ playagain = 1
 
 while playagain == 1:
 
-    ptype = random.randint(1,2)
-    number = random.randint(11,30)
+    ptype = random.randint(1, 2)
+    number = random.randint(11, 30)
     sol = 0
 
     print("Answer the math questions:")
