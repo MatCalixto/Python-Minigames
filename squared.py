@@ -1,6 +1,15 @@
 """Import needed for random number generation."""
 from random import randint
 
+
+def check_solution(guess: int, solution: int) -> None:
+    """Check if the answer is correct."""
+    if guess == solution:
+        print("\nCongrats, your answer was correct")
+    else:
+        print(f"\nUnfortunately the answer was {solution}, try again")
+
+
 while True:
 
     problem_type = randint(1, 2)
@@ -8,7 +17,7 @@ while True:
 
     print("Answer the math questions:\n")
 
-    solution = number ** (2 / problem_type)
+    problem_solution = number ** (2 / problem_type)
     challenge_number = number ** problem_type
 
     if problem_type == 1:
@@ -18,12 +27,7 @@ while True:
     else:
         raise ValueError("Invalid problem type.")
 
-    answer = int(input())
-
-    if answer == solution:
-        print("\nCongrats, your answer was correct")
-    else:
-        print(f"\nUnfortunately the answer was {solution}, try again")
+    check_solution(int(input()), problem_solution)
 
     play_again = int(input("\nType 1 if you want to play again: "))
     print("************************************************")
