@@ -1,13 +1,10 @@
 """Import needed for random number generation."""
 import random
 
-playagain = 1
-
-while playagain == 1:
+while True:
 
     ptype = random.randint(1, 2)
     number = random.randint(11, 30)
-    sol = 0
 
     print("Answer the math questions:")
     print()
@@ -25,7 +22,8 @@ while playagain == 1:
     else:
         print("\nUnfortunately the answer was " + str(sol) + ", try again")
 
-    playagain = 0
     playagain = int(input("\nType 1 if you want to play again: "))
+    if playagain != 1:
+        break
 
 print("\nGame has ended")
