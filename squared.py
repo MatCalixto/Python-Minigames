@@ -15,7 +15,7 @@ while True:
         answer = int(input(f"The square root of {number**2} equals: "))
         sol = number
     else:
-        print("Error, Not a valid problem type.")
+        raise ValueError("Invalid problem type.")
 
     if answer == sol:
         print("\nCongrats, your answer was correct")
